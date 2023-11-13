@@ -11880,4 +11880,10 @@ textarea.form-control-lg {
   width: 100%;
 }
 
+.divider {
+  border-left: 1px solid #000; /* Adjust the color and thickness of the line as needed */
+  height: 50px; /* Adjust the height of the line to match the content */
+  margin-top: 10px; /* Adjust the margin to control the spacing */
+}
+
 /*# sourceMappingURL=custom.css.map */
