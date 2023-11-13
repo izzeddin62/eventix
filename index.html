@@ -15,12 +15,12 @@
         <div class="container-lg pt-4 position-relative nav-container">
             <div class="d-flex align-items-center justify-content-between">
                 <img src="/images/logo.png" class="logo" alt="logo" />
-                <div>
+                <div class="d-none d-sm-block">
                     <button class="btn btn-outline-primary bg-white">My ticket</button>
                     <button class="btn btn-primary text-white">Sign Up</button>
                 </div>
             </div>
-            <div class="w-100">
+            <div class="w-100 d-none d-md-block">
                 <div class="search mx-auto mt-5">
                     <input placeholder="Search" class="form-control" />
                 </div>
@@ -32,7 +32,7 @@
     </header>
 
     <main>
-        <section class="py-5 d-flex container gap-4">
+        <section class="py-5 d-flex flex-column flex-md-row container gap-4">
             <div>
                 <img src="images/group.svg" alt="">
             </div>
@@ -56,22 +56,22 @@
             <div class="bg-primary opacity-25 h-100 w-100 background-light position-absolute">
             </div>
             <div class="container p-5">
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between gap-4">
                     <h2 class="text-primary">Upcoming Events</h2>
-                    <div class="d-flex gap-3">
-                        <select class="form-select rounded-pill px-5 bg-white" id="inputGroupSelect01">
+                    <div class="d-flex gap-3 flex-wrap flex-lg-nowrap">
+                        <select class="form-select rounded-pill px-5 bg-white select" id="inputGroupSelect01">
                             <option selected>Weekdays...</option>
                             <option value="1">Monday</option>
                             <option value="2">Tuesday</option>
                             <option value="3">Wednesday</option>
                         </select>
-                        <select class="form-select rounded-pill px-5 bg-white" id="inputGroupSelect02">
+                        <select class="form-select rounded-pill px-5 bg-white select" id="inputGroupSelect02">
                             <option selected>Event Type</option>
                             <option value="1">Show</option>
                             <option value="2">Meeting</option>
                             <option value="3">Class</option>
                         </select>
-                        <select class="form-select rounded-pill px-5 bg-white" id="inputGroupSelect01">
+                        <select class="form-select rounded-pill px-5 bg-white select" id="inputGroupSelect01">
                             <option selected>Any category...</option>
                             <option value="1">Business</option>
                             <option value="2">History</option>
@@ -187,9 +187,9 @@
         </section>
 
         <section class="bg-secondary">
-            <div class="container position-relative d-flex justify-content-end py-5">
-                <img src="images/illustration.svg" class="position-absolute bottom-0 start-0" alt="">
-                <div>
+            <div class="container position-relative d-flex justify-content-center justify-content-md-end py-5">
+                <img src="images/illustration.svg" class="position-absolute bottom-0 start-0 d-none d-md-inline" alt="">
+                <div >
                     <h3 class="text-white">Make your own Event </h3>
                     <p class="text-white">Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit. </p>
                     <button class="btn btn-lg btn-outline-light rounded-pill px-4">Learn more</button>
@@ -219,11 +219,11 @@
     <footer class="bg-secondary">
         <div class="container pt-5">
             <div class="row text-white gx-5">
-                <div class="col-4">
+                <div class="col-5 col-md-4 d-flex flex-column justify-content-between d-md-block">
                     <div class="d-flex justify-content-center mb-3">
                         <img src="/images/logo.png" class="logo" alt="">
                     </div>
-                    <p class="fw-6">Eventix is a global self-service ticketing platform for live experiences that allows
+                    <p class="fw-6 d-none d-md-block">Eventix is a global self-service ticketing platform for live experiences that allows
                         anyone to
                         create, share, find and attend events that fuel their passions and enrich their lives.</p>
                     <div>
@@ -233,13 +233,13 @@
                         <img src="/images/rounded-ln.svg" alt="">
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-2 d-none d-md-block">
                     <h4>Plan Events</h4>
                     <p>Create and Set Up</p>
                     <p>Buy Tickets</p>
                     <p>Online Events</p>
                 </div>
-                <div class="col-2">
+                <div class="col-2 d-none d-md-block">
                     <h4>Eventick</h4>
                     <p>About Us</p>
                     <p>Contact Us</p>
@@ -247,7 +247,8 @@
                     <p>Privacy</p>
                     <p>Terms</p>
                 </div>
-                <div class="col-3">
+                <div class="col-2 d-md-none"></div>
+                <div class="col-5 col-md-3">
                     <h4>Stay in the loop</h4>
                     <p>Join our mailing list to stay in the loop with our newest for Event and concert</p>
                     <label class="input-group mb-3">

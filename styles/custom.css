@@ -11881,4 +11881,8 @@ textarea.form-control-lg {
   width: 172px;
 }
 
+.select {
+  max-width: 320px;
+}
+
 /*# sourceMappingURL=custom.css.map */
