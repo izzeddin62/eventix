@@ -11885,4 +11885,10 @@ textarea.form-control-lg {
   max-width: 320px;
 }
 
+.divider {
+  border-left: 1px solid #000;
+  height: 50px;
+  margin-top: 10px;
+}
+
 /*# sourceMappingURL=custom.css.map */
