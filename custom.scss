@@ -1,5 +1,6 @@
 $primary:   #F03D3E;
 $secondary: #7B61FF;
+$dark: #242565;
 @import "./node_modules/bootstrap/scss/bootstrap";
 
 .header {
@@ -14,10 +15,7 @@ $secondary: #7B61FF;
         right: 0;
         bottom: 0;
     }
-    .logo {
-        height: 78px;
-        width: 172px;
-    }
+
     .nav-container {
         z-index: 1;
     }
@@ -27,6 +25,10 @@ $secondary: #7B61FF;
     }
 }
 
+.logo {
+    height: 78px;
+    width: 172px;
+}
 
 
 
